@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mon premier site</title>
+        <meta charset="utf-8">
+
+        <style>
+            body {
+                background-color:#e6f7ff;
+                font-family:'Segoe UI', tahoma, geneva, verdana, sans-serif;
+                text-align: center;
+                padding-top:50px;
+            }
+
+            h1 {
+                color:#ff4500;
+            }
+
+            p {
+                color:#333333;
+                font-size:18px;
+            }
+            button {
+                background-color:#1890ff;
+                color:white;
+                border:none;
+                padding:10px 20px;
+                font-size:16px;
+                cursor:pointer;
+                border-radius:5px;
+            }
+            button:hover {
+                background-color:#40a9ff;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <h1>Bienvenu sur mon premier site web !</h1>
+        <p>Je suis en train d'apprendre le développement web dépuis Abidjan</p>
+
+        <button id="monBouton">Clique ici !</button>
+        
+        <script>
+            const bouton = document.getElementById("monBouton");
+
+            bouton.addEventListener("click", function() {
+                alert("Félicitation, tu as activé ton premier code javascript ! Akwaba")
+            });
+        </script>
+    </body>
+</html>
